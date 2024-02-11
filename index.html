@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+          <img src="./items/logo.png" alt="Logo">
+        </div>
+
+        <div class="search-bar">
+          <i class="main-search fa-solid fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Поиск" autocomplete="off">
+          <div id="autocompleteResults"></div>
+        </div>
+        
+        <div class="notification" id="notification">
+          <i alt="Notification" class="fa-solid fa-bell" onclick="showNotification()"></i>
+        </div>
+      </header>
+    
+      <div class="overlay" id="overlay">
+        <div class="notification-panel">
+          <div class="notification-panel-header">
+            <i class="fa-solid fa-chevron-left" onclick="hideNotification()"></i></button>
+            <span class="panel-title" style="transform: translate(25%);">Уведомления</span>
+            <button class="clear-button" onclick="clearNotifications()" style="font-weight: bold;">Очистить</button>
+          </div>
+          
+          <div class="notification-item">
+            <div class="notification-header">
+              <div class="notification-indicator"></div>
+              <h3>Кредитные организации</h3>
+              <i src="trash.png" alt="Delete" class="fa-solid fa-trash" onclick="deleteNotification(this)"></i>
+            </div>
+            <div class="notification-content">
+              <p>Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии...</p>
+            </div>
+          </div>
+          
+          <div class="notification-item">
+            <div class="notification-header">
+              <div class="notification-indicator"></div>
+              <h3>Кредитные организации</h3>
+              <i src="trash.png" alt="Delete" class="fa-solid fa-trash" onclick="deleteNotification(this)"></i>
+            </div>
+            <div class="notification-content">
+              <p>Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии...</p>
+            </div>
+          </div>
+          
+
+          <div class="notification-item low-opacity">
+            <div class="notification-header">
+              <h3>Кредитные организации</h3>
+              <i src="trash.png" alt="Delete" class="fa-solid fa-trash" onclick="deleteNotification(this)"></i>
+            </div>
+            <div class="notification-content">
+              <p>Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии...</p>
+            </div>
+          </div>
+          
+          </div>
+      </div>
+
+      <section class="help">
+        <div class="content">
+
+          <div class="row">
+              <img src="./items/Male Lawyer.png" alt="Image">
+              <div class="info" style="position: sticky; z-index: 1;">
+                <h2>Нужно срочная помощь?</h2>
+                <p>Мы на связи в любое время,<br> чтобы помочь вам!</p>
+              </div>
+          </div>
+          <div class="row">
+            <button class="action-button">Позвонить нам<i style="padding-left: 5px;" class="fa-solid fa-phone"></i></button>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="slider-section">
+        <h2>Ситуации наших последних клиентов</h2>
+
+        <div class="slider">
+          <div class="slide">
+            <img src="./items/card1.png" alt="Card 1">
+            <div class="content">
+              <h3>Развод</h3>
+              <p>С нами это легко</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="./items/card2.png" alt="Card 2">
+            <div class="content">
+              <h3>Банкротство</h3>
+              <p>С нами это легко</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="./items/card1.png" alt="Card 3">
+            <div class="content">
+              <h3>Развод</h3>
+              <p>С нами это легко</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="./items/card2.png" alt="Card 4">
+            <div class="content">
+              <h3>Банкротство</h3>
+              <p>С нами это легко</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+      <section class="consultation-section">
+        <div class="row">
+          <div class="image-container">
+            <img src="./items/consultation.png" alt="Image">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="content">
+            <h2>Мы всегда на связи
+              и готовы помочь вам</h2>
+            <p>Готовы проконсультировать вас</p>
+            <button class="action-button">Мне нужна консультация</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section">
+        <h2>Наши услуги</h2>
+        <div class="services-container">
+          <div class="service-item">
+            <img src="./items/service1.png" alt="Service 1">
+            <h3>Ситуации</h3>
+            <p>в судебной практике</p>
+          </div>
+          <div class="service-item">
+            <img src="items/service2.png" alt="Service 2">
+            <h3>Вопрос ответ</h3>
+          </div>
+          <div class="service-item">
+            <img src="items/service3.png" alt="Service 3">
+            <h3>Документы</h3>
+          </div>
+          <div class="service-item">
+            <img src="items/service4.png" alt="Service 4">
+            <h3>Справочник</h3>
+            <p>нужной информации</p>
+          </div>
+        </div>
+      </section>
+      
+    
+      <section class="news-section">
+        <div class="news-header">
+          <h2>Новости</h2>
+          <a href="#" class="read-all" onclick="openAllNewsPanel()">Читать все</a>
+        </div>
+        <div class="news-list">
+          <div class="news-item" onclick="openNewsItem(1)" data-item="1" data-sliced="false">
+            <img src="./items/image.jpeg" alt="News 1">
+            <div class="news-content">
+              <h3>Кредитные организации</h3>
+              <p data-full-text="Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля 
+              требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 
+              1 июля требовать от компаний, ИП и физлиц повышенные комиссии.">Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля 
+              требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля требовать от компаний, 
+              ИП и физлиц повышенные комиссии.</p>
+              <span class="news-date">25 апреля</span>
+            </div>
+          </div>
+          <div class="news-item" onclick="openNewsItem(2)" data-item="2" data-sliced="false">
+            <img src="./items/image2.jpeg" alt="News 2">
+            <div class="news-content">
+              <h3>Кредитные организации</h3>
+              <p data-full-text="Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля 
+              требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 
+              1 июля требовать от компаний, ИП и физлиц повышенные комиссии.">Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля 
+              требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля требовать от компаний, 
+              ИП и физлиц повышенные комиссии.</p>
+              <span class="news-date">25 апреля</span>
+            </div>
+          </div>
+          <div class="news-item" onclick="openNewsItem(3)" data-item="3" data-sliced="false">
+            <div class="news-content">
+              <h3>Кредитные организации</h3>
+              <p data-full-text="Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля 
+              требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 
+              1 июля требовать от компаний, ИП и физлиц повышенные комиссии.">Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля 
+              требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные комиссии Банкам нельзя с 1 июля требовать от компаний, 
+              ИП и физлиц повышенные комиссии.</p>
+              <span class="news-date">25 апреля</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  <div class="news-overlay" id="news-overlay">
+    <div class="overlay-content">
+      <div class="overlay-header">
+        <button class="close-button" onclick="closeAllNewsPanel()"><i class="fa-solid fa-chevron-left"></i></button>
+        <h2 class="overlay-title">Новости</h2>
+      </div>
+      <div class="news-items">
+      </div>
+    </div>
+  </div>
+      
+<div class="news-panel" id="news-panel">
+  <div class="panel-header">
+    <button class="close-button" onclick="closeNewsPanel()"><i class="fa-solid fa-chevron-left"></i></button>
+  </div>
+  <div class="news-item-content">
+  </div>
+</div>
+</main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#"><i class="fas fa-home"></i><span class="main-pageTxt">Главная</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-book-bookmark"></i><span>Сервисы</span></a></li>
+        <li><a href="#"><i class="fas fa-comment"></i><span>Обращения</span></a></li>
+        <li><a href="#"><i class="fas fa-phone"></i><span>Звонок</span></a></li>
+        <li><a href="#"><i class="fas fa-user"></i><span>Профиль</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+  
+  <script src="./script.js"></script>
+  <script src="https://kit.fontawesome.com/97e885e109.js" crossorigin="anonymous"></script>
+</body>
+</html>
